@@ -47,7 +47,7 @@ entregar productos completos de principio a fin.`;
     { name: 'Java',        icon: 'assets/java.png', color: '#E76F00', category: 'backend'   },
     { name: 'Node.js',     icon: 'assets/nodejs.png', color: '#68A063', category: 'backend'   },
     { name: 'Spring Boot', icon: 'assets/springboot.png', color: '#169b0a', category: 'backend'   },
-    { name: 'C#',          icon: 'assets/csharp.png', color: '#9B4F96', category: 'backend'   },
+    { name: 'C#',          icon: 'assets/cshar.png', color: '#9B4F96', category: 'backend'   },
     { name: 'Python',      icon: 'assets/python.png', color: '#3776AB', category: 'backend'   },
     { name: 'C++',         icon: 'assets/cplusplus.png', color: '#00599C', category: 'language'  },
     { name: 'TypeScript',  icon: 'assets/typescript.png', color: '#3178C6', category: 'language'  },
