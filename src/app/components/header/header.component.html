@@ -1,0 +1,43 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <div class="container header__inner">
+
+   
+    <a routerLink="/" class="header__logo" (click)="closeMenu()">
+      <span class="logo-bracket">&lt;</span>
+    
+      <span class="logo-text">TI</span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+
+  
+    <nav class="header__nav" [class.open]="menuOpen">
+      <a
+        *ngFor="let link of portfolio.navLinks"
+        [routerLink]="link.path"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+        class="nav-link"
+        (click)="closeMenu()"
+      >
+        {{ link.label }}
+      </a>
+
+     
+      <a
+        [href]="portfolio.contactLinks[0].url"
+        class="btn btn-primary btn--sm"
+        target="_blank"
+        rel="noopener"
+      >
+        💬 Hablemos
+      </a>
+    </nav>
+
+    
+    <button class="hamburger" [class.active]="menuOpen" (click)="toggleMenu()" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

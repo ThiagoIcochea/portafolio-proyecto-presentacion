@@ -1,0 +1,171 @@
+
+
+<section class="about section">
+  <div class="container">
+
+  
+    <div class="about__header">
+      <p class="section-tag">// Sobre mí</p>
+      <h1 class="section-title">
+        Conóceme <span>mejor</span>
+      </h1>
+      <p class="section-subtitle">
+        Un poco sobre quién soy, mi historia y lo que me mueve.
+      </p>
+    </div>
+
+    
+    <div class="about__grid">
+
+     
+      <div class="about__profile glass-card">
+       
+        <div class="profile__avatar">
+        
+               
+         
+          <div class="avatar-placeholder">
+           <img src="assets/foto.png" class="avatar-placeholder-image" alt="Thiago Paolo" />
+          </div>
+          <div class="avatar-ring" > </div>
+        </div>
+
+      
+        <h2 class="profile__name">{{ portfolio.name }}</h2>
+        <p class="profile__role">{{ portfolio.role }}</p>
+        <p class="profile__subrole">{{ portfolio.roleAccent }}</p>
+
+      
+        <div class="profile__info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+           
+            <span>Lima, Perú</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🎓</span>
+           
+            <span>Estudiante Universitario</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💼</span>
+            <span>Disponible para prácticas</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🌐</span>
+            
+            <span>Español (nativo), Inglés (intermedio)</span>
+          </div>
+        </div>
+
+      
+        <div class="profile__links">
+          <a
+            *ngFor="let link of portfolio.contactLinks"
+            [href]="link.url"
+            class="btn btn-outline btn--full"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+             <img class="btn--full-image" [src]="link.icon" alt="icono de medio de contacto">{{ link.label }}
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="about__content">
+
+      
+        <div class="content-block glass-card">
+          <h3 class="block-title">
+            <span class="block-icon">👋</span> Mi historia
+          </h3>
+         
+          <p>
+            Soy <strong>Thiago Paolo Icochea Rodriguez</strong>, un desarrollador
+            apasionado por la tecnología y la resolución de problemas complejos.
+            Mi camino en la programación comenzó con curiosidad  en secundaria y creció hasta
+            convertirse en mi vocación.
+          </p>
+          <br/>
+          
+          <p>
+            Me especializo en el desarrollo backend, creando APIs robustas y
+            sistemas escalables, pero también tengo experiencia sólida en frontend,
+            lo que me permite ver el proyecto completo. Siempre busco las mejores
+            prácticas y estoy en constante aprendizaje.
+          </p>
+          <br/>
+          
+          <p>
+            Actualmente busco una oportunidad de prácticas en Lima donde pueda
+            aplicar mis conocimientos, crecer profesionalmente y aportar valor
+            a un equipo de trabajo.
+          </p>
+        </div>
+
+        
+        <div class="content-block glass-card">
+          <h3 class="block-title">
+            <span class="block-icon">🎓</span> Educación
+          </h3>
+          <div class="timeline">
+            <div *ngFor="let edu of education" class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <div class="timeline__header">
+                  <h4 class="timeline__title">{{ edu.degree }}</h4>
+                  <span class="timeline__badge" [class.active]="edu.status === 'En curso'">
+                    {{ edu.status }}
+                  </span>
+                </div>
+                <p class="timeline__institution">{{ edu.institution }}</p>
+                <p class="timeline__period">📅 {{ edu.period }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="content-block glass-card">
+          <h3 class="block-title">
+            <span class="block-icon">💼</span> Experiencia
+          </h3>
+          <div class="timeline">
+            <div *ngFor="let exp of experience" class="timeline__item">
+              <div class="timeline__dot timeline__dot--accent"></div>
+              <div class="timeline__content">
+                <div class="timeline__header">
+                  <h4 class="timeline__title">{{ exp.role }}</h4>
+                  <span class="timeline__period">{{ exp.period }}</span>
+                </div>
+                <p class="timeline__institution">{{ exp.company }}</p>
+                <p class="timeline__desc">{{ exp.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="content-block glass-card">
+          <h3 class="block-title">
+            <span class="block-icon">✨</span> Intereses
+          </h3>
+          <div class="interests-grid">
+            <span *ngFor="let interest of interests" class="interest-tag">
+              {{ interest }}
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   
+    <div class="about__cta">
+      <a routerLink="/habilidades" class="btn btn-primary">Ver mis habilidades</a>
+      <a routerLink="/contacto" class="btn btn-outline">Contactarme</a>
+    </div>
+
+  </div>
+</section>

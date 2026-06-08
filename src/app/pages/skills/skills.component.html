@@ -1,0 +1,72 @@
+
+
+<section class="skills section">
+  <div class="container">
+
+    
+    <div class="skills__header">
+      <p class="section-tag">// Habilidades</p>
+      <h1 class="section-title">
+        Mis <span>tecnologías</span>
+      </h1>
+      <p class="section-subtitle">
+        El stack con el que construyo soluciones reales, día a día.
+      </p>
+    </div>
+
+    
+    <div class="skills__filters">
+      <button
+        class="filter-btn"
+        [class.active]="activeCategory === 'all'"
+        (click)="setCategory('all')"
+      >
+        🔮 Todas
+      </button>
+      <button
+        *ngFor="let cat of categories"
+        class="filter-btn"
+        [class.active]="activeCategory === cat.key"
+        (click)="setCategory(cat.key)"
+      >
+        {{ cat.icon }} {{ cat.label }}
+      </button>
+    </div>
+
+  
+    <div class="skills__grid">
+      <div
+        *ngFor="let tech of filteredTechs"
+        class="tech-card glass-card"
+        [style.--tech-color]="tech.color"
+      >
+        <div class="tech-card__glow"></div>
+        <span class="tech-card__icon"><img class="tech-card__icon-image" [src]="tech.icon" alt="icono de tecnologias usada"></span>
+        <h3 class="tech-card__name">{{ tech.name }}</h3>
+        <span class="tech-card__category">{{ tech.category }}</span>
+      </div>
+    </div>
+
+    
+    <div class="soft-skills">
+      <h2 class="section-title" style="margin-bottom: 12px;">
+        Habilidades <span>blandas</span>
+      </h2>
+     
+      <div class="soft-skills__grid">
+        <div *ngFor="let skill of softSkills" class="soft-card glass-card">
+          <span class="soft-card__icon">{{ skill.icon }}</span>
+          <p class="soft-card__label">{{ skill.label }}</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="skills__cta">
+      <a routerLink="/contacto" class="btn btn-primary">
+        💬 ¡Hablemos de tu proyecto!
+      </a>
+    </div>
+
+  </div>
+</section>

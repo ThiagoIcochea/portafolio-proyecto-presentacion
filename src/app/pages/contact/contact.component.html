@@ -1,0 +1,124 @@
+
+
+<section class="contact section">
+  <div class="container">
+
+  
+    <div class="contact__header">
+      <p class="section-tag">// Contacto</p>
+      <h1 class="section-title">
+        Hablemos <span>juntos</span>
+      </h1>
+      <p class="section-subtitle">
+        Estoy buscando prácticas profesionales en Lima. ¡No dudes en escribirme!
+      </p>
+    </div>
+
+    <div class="contact__grid">
+
+      
+      <div class="contact__channels">
+        <h2 class="channels-title">Encuéntrame en</h2>
+
+        <div class="channels-list">
+          <a
+            *ngFor="let link of portfolio.contactLinks"
+            [href]="link.url"
+            class="channel-card glass-card"
+            [style.--channel-color]="link.color"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="channel-card__icon-wrap">
+              <span class="channel-card__icon"><img class="channel-card__icon-image" [src]="link.icon" alt="icono de red social"> </span>
+            </div>
+            <div class="channel-card__info">
+              <h3 class="channel-card__name">{{ link.label }}</h3>
+             
+              <p class="channel-card__handle">
+                <ng-container [ngSwitch]="link.label">
+                  <ng-container *ngSwitchCase="'WhatsApp'">
+                 
+                    +51 968 085 026
+                  </ng-container>
+                  <ng-container *ngSwitchCase="'Email'">
+                   
+                    ticochearodriguez&#64;gmail.com
+                  </ng-container>
+                  <ng-container *ngSwitchCase="'LinkedIn'">
+                  
+                    /in/thiago-paolo-icochea-rodríguez
+                  </ng-container>
+                  <ng-container *ngSwitchCase="'GitHub'">
+                    
+                    &#64;ThiagoIcochea
+                  </ng-container>
+                  <ng-container *ngSwitchDefault>
+                    Ver perfil
+                  </ng-container>
+                </ng-container>
+              </p>
+            </div>
+            <span class="channel-card__arrow">→</span>
+          </a>
+        </div>
+
+     
+        <div class="availability glass-card">
+          <div class="availability__dot"></div>
+          <div>
+            <p class="availability__title">Disponible ahora</p>
+           
+            <p class="availability__desc">Respondo en menos de 24 horas hábiles · Lima, Perú (GMT-5)</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="contact__info">
+
+        <div class="reasons">
+          <h2 class="channels-title">¿Por qué contactarme?</h2>
+          <div class="reasons-list">
+            <div *ngFor="let reason of reasons" class="reason-card glass-card">
+              <span class="reason-icon">{{ reason.icon }}</span>
+              <div>
+                <h4 class="reason-title">{{ reason.title }}</h4>
+                <p class="reason-desc">{{ reason.desc }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="mini-cv glass-card">
+          <div class="mini-cv__header">
+            <div class="mini-cv__avatar">TI</div>
+            <div>
+             
+              <h3 class="mini-cv__name">{{ portfolio.name }}</h3>
+              <p class="mini-cv__role">{{ portfolio.role }} · {{ portfolio.roleAccent }}</p>
+            </div>
+          </div>
+          <div class="mini-cv__tags">
+            <span *ngFor="let tech of portfolio.technologies.slice(0, 6)" class="tech-badge">
+              <img class="tech-badge-image" [src]="tech.icon" alt="icono de tecnologias usada"> {{ tech.name }}
+            </span>
+            <span class="tech-badge">+{{ portfolio.technologies.length - 6 }} más</span>
+          </div>
+          <a
+            [href]="portfolio.contactLinks[1].url"
+            class="btn btn-primary"
+            style="width:100%; justify-content:center;"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ✉️ Enviar correo
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

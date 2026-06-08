@@ -1,0 +1,211 @@
+
+:root {
+  
+  --color-primary:     #00B4D8;
+  --color-primary-dark:#0077B6;
+  --color-primary-light:#90E0EF;
+  --color-accent:      #48CAE4;
+  --color-bg:          #020B18;
+  --color-bg-card:     #071527;
+  --color-bg-glass:    rgba(0, 180, 216, 0.07);
+  --color-text:        #E8F4F8;
+  --color-text-muted:  #7FB3C8;
+  --color-border:      rgba(0, 180, 216, 0.2);
+
+
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'Outfit', sans-serif;
+
+ 
+  --section-padding: 100px 0;
+  --container-max:   1200px;
+
+ 
+  --glow: 0 0 30px rgba(0, 180, 216, 0.4);
+  --glow-sm: 0 0 12px rgba(0, 180, 216, 0.25);
+  --radius: 16px;
+  --radius-sm: 8px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+
+  
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0, 119, 182, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 180, 216, 0.1) 0%, transparent 50%),
+    radial-gradient(rgba(0, 180, 216, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 28px 28px;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+  &:hover { color: var(--color-primary-light); }
+}
+
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 16px;
+
+  span {
+    color: var(--color-primary);
+  }
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 560px;
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  text-decoration: none;
+
+  &-primary {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+    color: #fff;
+    box-shadow: var(--glow-sm);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--glow);
+      color: #fff;
+    }
+  }
+
+  &-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+
+    &:hover {
+      background: var(--color-primary);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: var(--glow-sm);
+    }
+  }
+}
+
+
+.glass-card {
+  background: var(--color-bg-glass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--glow-sm);
+    transform: translateY(-4px);
+  }
+}
+
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  background: var(--color-bg-glass);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary-light);
+  transition: var(--transition);
+
+  &:hover {
+    background: rgba(0, 180, 216, 0.15);
+    border-color: var(--color-primary);
+  }
+}
+
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-dark);
+  border-radius: 3px;
+}
+
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: var(--glow-sm); }
+  50%       { box-shadow: var(--glow); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+  :root { --section-padding: 70px 0; }
+  .section-title { font-size: 1.8rem; }
+}
