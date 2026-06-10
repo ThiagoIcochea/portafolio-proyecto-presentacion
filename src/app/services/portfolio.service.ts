@@ -66,5 +66,6 @@ entregar productos completos de principio a fin.`;
     { label: 'Sobre mí',    path: '/sobre-mi'   },
     { label: 'Habilidades', path: '/habilidades'},
     { label: 'Contacto',    path: '/contacto'   },
+    {label : 'Proyectos', path: '/proyectos'}
   ];
 }

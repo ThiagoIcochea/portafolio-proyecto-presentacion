@@ -20,6 +20,10 @@ export const routes: Routes = [
     path: 'contacto',
     loadComponent: () =>
       import('./pages/contact/contact.component').then((m) => m.ContactComponent),
+  },{
+    path: 'proyectos',
+    loadComponent: () =>
+      import('./pages/projects/projects.component').then((m) => m.ProjectsComponent),
   },
   {
     path: '**',

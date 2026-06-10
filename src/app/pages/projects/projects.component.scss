@@ -1,0 +1,150 @@
+.projects {
+  padding-top: 140px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 64px;
+
+    .section-subtitle {
+      margin: 12px auto 0;
+      max-width: 700px;
+    }
+  }
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-primary);
+
+    .project-card__image img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s ease;
+    }
+  }
+
+  &__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    margin-bottom: 18px;
+  }
+}
+
+.project-category {
+  color: var(--color-primary);
+  font-size: .85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.project-description {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.project-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  padding: 8px 14px;
+
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+
+  color: #22C55E;
+  border-radius: 50px;
+
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--color-border);
+
+  font-size: .85rem;
+  color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card__image {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-card__content {
+    padding: 24px;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+}

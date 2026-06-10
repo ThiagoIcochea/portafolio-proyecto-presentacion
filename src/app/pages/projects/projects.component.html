@@ -1,0 +1,121 @@
+<section class="projects section">
+  <div class="container">
+
+    <div class="projects__header">
+      <p class="section-tag">// Proyectos</p>
+
+      <h1 class="section-title">
+        Mis <span>Proyectos</span>
+      </h1>
+
+      <p class="section-subtitle">
+        Proyectos desarrollados aplicando tecnologías modernas de frontend,
+        backend, bases de datos y comunicación en tiempo real.
+      </p>
+    </div>
+
+    <div class="projects-list">
+
+      <article
+        *ngFor="let project of projects"
+        class="project-card glass-card"
+      >
+
+        <div class="project-card__image">
+
+          <img
+            [src]="project.image"
+            [alt]="project.name"
+          >
+
+          <span class="project-status">
+            {{ project.status }}
+          </span>
+
+        </div>
+
+        <div class="project-card__content">
+
+          <div class="project-card__top">
+
+            <p class="project-category">
+              {{ project.category }}
+            </p>
+
+            <h2 class="project-title">
+              {{ project.name }}
+            </h2>
+
+          </div>
+
+          <p class="project-description">
+            {{ project.description }}
+          </p>
+
+          <div class="project-techs">
+
+            <span
+              *ngFor="let tech of project.technologies"
+              class="tech-badge"
+            >
+              {{ tech }}
+            </span>
+
+          </div>
+
+          <div class="project-actions">
+
+            <a
+              [href]="project.demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              🚀 Ver Proyecto
+            </a>
+
+            <a
+              [href]="project.github"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-github glass-card"
+            >
+
+              <div class="project-github__icon-wrap">
+
+                <img
+                  class="project-github__icon"
+                  [src]="project.githubIcon"
+                  alt="GitHub"
+                >
+
+              </div>
+
+              <div class="project-github__info">
+
+                <h3 class="project-github__title">
+                  Repositorio GitHub
+                </h3>
+
+                <p class="project-github__subtitle">
+                  Ver código fuente completo
+                </p>
+
+              </div>
+
+              <span class="project-github__arrow">
+                →
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
