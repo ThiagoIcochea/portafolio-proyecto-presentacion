@@ -81,7 +81,13 @@
         <div
           *ngFor="let item of wheelItems"
           class="wheel__item"
-          [style.transform]="'rotate(' + item.angle + 'deg) translateX(180px)'"
+          [style.transform]="
+'rotate(' +
+item.angle +
+'deg) translateX(' +
+wheelRadius +
+'px)'
+"
           [style.--tech-color]="item.color"
           [title]="item.name"
         >
