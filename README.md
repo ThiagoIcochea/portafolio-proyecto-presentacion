@@ -16,6 +16,7 @@ src/app/
 │   ├── about/           # Sobre mí: educación, experiencia, intereses
 │   ├── skills/          # Tecnologías con filtros por categoría
 │   └── contact/         # Canales de contacto
+    |__ projects/        # Proyectos personales 
 ├── services/
 │   └── portfolio.service.ts   # DATOS CENTRALIZADOS
 ├── models/
@@ -60,9 +61,10 @@ Se puede editar el archivo `src/styles/main.scss` para cambiar la paleta:
 | Ruta          | Componente  | Descripción                          |
 |---------------|-------------|--------------------------------------|
 | `/`           | HomeComponent | Landing con ruleta + hero + stats  |
-| `/sobre-mi`   | AboutComponent | Bio, educación, experiencia        |
+| `/sobre-mi`   | AboutComponent | Bio, educación, experiencia       |
 | `/habilidades`| SkillsComponent | Grid de tecnologías con filtros  |
-| `/contacto`   | ContactComponent | Links de contacto + mini CV      |
+| `/contacto`   | ContactComponent | Links de contacto + mini CV     |
+| `/proyectos`  |ProjectsComponent | Proyectos personales y enlaces  de repositorios |
 
 ---
 
