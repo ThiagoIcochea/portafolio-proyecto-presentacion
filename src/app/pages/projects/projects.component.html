@@ -53,14 +53,12 @@
           </p>
 
           <div class="project-techs">
-
             <span
               *ngFor="let tech of project.technologies"
               class="tech-badge"
             >
               {{ tech }}
             </span>
-
           </div>
 
           <div class="project-actions">
@@ -78,35 +76,15 @@
               [href]="project.github"
               target="_blank"
               rel="noopener noreferrer"
-              class="project-github glass-card"
+              class="github-btn"
             >
+              <img
+                [src]="project.githubIcon"
+                alt="GitHub"
+                class="github-btn__icon"
+              >
 
-              <div class="project-github__icon-wrap">
-
-                <img
-                  class="project-github__icon"
-                  [src]="project.githubIcon"
-                  alt="GitHub"
-                >
-
-              </div>
-
-              <div class="project-github__info">
-
-                <h3 class="project-github__title">
-                  Repositorio GitHub
-                </h3>
-
-                <p class="project-github__subtitle">
-                  Ver código fuente completo
-                </p>
-
-              </div>
-
-              <span class="project-github__arrow">
-                →
-              </span>
-
+              <span>GitHub</span>
             </a>
 
           </div>
