@@ -1,0 +1,62 @@
+<footer class="footer">
+  <div class="footer__glow"></div>
+  <div class="container footer__inner">
+
+   
+    <div class="footer__brand">
+      <a routerLink="/" class="footer__logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">TI</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer__tagline">
+        Construyendo el futuro,<br/>una línea de código a la vez.
+      </p>
+    </div>
+
+  
+    <div class="footer__nav">
+      <h4 class="footer__heading">Navegación</h4>
+      <ul>
+        <li *ngFor="let link of portfolio.navLinks">
+          <a [routerLink]="link.path">{{ link.label }}</a>
+        </li>
+      </ul>
+    </div>
+
+  
+    <div class="footer__contact">
+      <h4 class="footer__heading">Contáctame</h4>
+      <div class="footer__links">
+        <a
+          *ngFor="let contact of portfolio.contactLinks"
+          [href]="contact.url"
+          class="footer__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          [style.--link-color]="contact.color"
+        >
+          <span class="footer__link-icon"><img class="footer__link-icon-image" [src]="contact.icon" alt="icono de medio de contacto"> </span>
+          <span>{{ contact.label }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="footer__bottom">
+    <div class="container">
+      <p>
+        © {{ currentYear }}
+       
+        <strong>Thiago Paolo Icochea Rodriguez</strong>.
+        Todos los derechos reservados.
+      </p>
+      <p class="footer__made">
+        Hecho en
+       
+        Lima, Perú 
+      </p>
+    </div>
+  </div>
+</footer>
