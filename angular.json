@@ -28,6 +28,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/portafolio-proyecto-presentacion/",
                "optimization": {
     "fonts": {
       "inline": false
