@@ -42,7 +42,7 @@ export class ProjectsComponent {
       githubIcon:
         'assets/github.webp',
 
-      status: 'Proyecto Finalizado',
+      status: 'Activo',
 
       technologies: [
         'React',
