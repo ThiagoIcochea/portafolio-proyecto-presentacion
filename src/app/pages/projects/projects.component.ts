@@ -61,12 +61,12 @@ export class ProjectsComponent {
     ,
 
     {
-  name: 'Sophix AI',
+  name: 'Sophix IA',
   typo: 'apk',
   category: 'Inteligencia Artificial • RAG • Mobile',
   description:
     'Plataforma de IA capaz de analizar repositorios GitHub mediante arquitectura RAG, embeddings y búsqueda vectorial. Permite conversar con el código fuente utilizando múltiples modelos de IA, indexación automática con n8n y chat en tiempo real mediante WebSockets.',
-  image: 'assets/sophixia.jpg',
+  image: 'assets/sophixia.png',
   status: 'Activo',
   technologies: [
     'NestJS',
