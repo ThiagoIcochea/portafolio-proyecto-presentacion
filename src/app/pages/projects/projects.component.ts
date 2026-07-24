@@ -118,7 +118,7 @@ export class ProjectsComponent {
 },
 
 {
-  name: 'NendoShop',
+  name: 'Nendoshop',
   typo: 'web',
   category: 'E-commerce Full Stack • Trabajo Colaborativo',
   description:
