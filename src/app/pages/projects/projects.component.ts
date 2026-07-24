@@ -75,7 +75,6 @@ export class ProjectsComponent {
     'TypeScript',
     'PostgreSQL',
     'Qdrant',
-    'Jina AI',
     'WebSockets',
     'GitHub API',
     'Azure Key Vault',
@@ -85,6 +84,69 @@ export class ProjectsComponent {
   demo: 'https://github.com/ThiagoIcochea/portafolio-proyecto-presentacion/releases/download/version/application-7c8a5299-566f-41b5-9f71-1fd146d2371a.apk',
   github: 'https://github.com/ThiagoIcochea/portafolio-proyecto-sophix.git',
   githubIcon: 'assets/github.webp'
+},
+
+{
+  name: 'NetThink',
+  typo: 'web',
+  category: 'Marketplace B2B • Trabajo Colaborativo',
+  description:
+    'Marketplace B2B desarrollado de forma colaborativa para conectar empresas proveedoras y compradoras mediante una plataforma moderna de comercio electrónico. Como Technical Lead, lideré la arquitectura técnica, la integración entre el frontend y el backend, la coordinación del desarrollo y la definición de estándares del proyecto. El sistema incorpora autenticación, gestión de productos, panel administrativo y una API REST escalable. Proyecto desarrollado junto a Iker Jared Rondoy Perez, Valeri Alexandra Torres Guerrero y Angel Gabriel Valle Cotera.',
+
+  image: 'assets/netthink-preview.png',
+
+  github:
+    'https://github.com/ThiagoIcochea/ProyectoInnovacion.git',
+
+  demo:
+    'https://proyectoinnovacion-1.onrender.com/login',
+
+  githubIcon:
+    'assets/github.webp',
+
+  status: 'Finalizado',
+
+  technologies: [
+    'Angular',
+    'SASS',
+    'Node.js',
+    'Express',
+    'MySQL',
+    'JWT',
+    'REST API'
+  ]
+},
+
+{
+  name: 'NendoShop',
+  typo: 'web',
+  category: 'E-commerce Full Stack • Trabajo Colaborativo',
+  description:
+    'Plataforma de comercio electrónico Full Stack desarrollada de forma colaborativa para ofrecer una experiencia completa de compra en línea. Como Technical Lead, lideré la arquitectura técnica, la planificación del desarrollo y la integración entre el frontend en React, el backend en Node.js y MongoDB Atlas. Además, coordiné la implementación de funcionalidades como autenticación, catálogo de productos, carrito de compras, gestión de pedidos y comunicación en tiempo real. Proyecto desarrollado junto a Percy Alonzo Chabria Loayza, Aaron Toribio Rojas Olano, Melany Daniela Carbajal Añanca, Laura Angélica Gómez Linares y Antonio Nicolás Guevara Morales.',
+
+  image: 'assets/nendoshop-preview.png',
+
+  github:
+    'https://github.com/ThiagoIcochea/nendoshop',
+
+  demo:
+    'https://nendoshop.onrender.com',
+
+  githubIcon:
+    'assets/github.webp',
+
+  status: 'Finalizado',
+
+  technologies: [
+    'React',
+    'Tailwind CSS',
+    'Node.js',
+    'Express',
+    'MongoDB Atlas',
+    'Socket.IO',
+    'JWT',
+    'REST API'
+  ]
 }
   ];
 
