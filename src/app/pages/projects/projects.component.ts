@@ -87,7 +87,7 @@ export class ProjectsComponent {
 },
 
 {
-  name: 'NetThink',
+  name: 'Nethink',
   typo: 'web',
   category: 'Marketplace B2B • Trabajo Colaborativo',
   description:
