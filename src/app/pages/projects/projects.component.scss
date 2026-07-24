@@ -35,29 +35,18 @@
   position: relative;
   margin-bottom: 28px;
 
-  height: 420px;
-  padding: 12px; 
-
   border-radius: 18px;
   overflow: hidden;
 
-  background: #0b1623;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 }
 
 &__image img {
   display: block;
-
-  max-width: 100%;
-  max-height: 110%;
-
-  width: auto;
+  width: 100%;
   height: auto;
 
-  transition: .4s ease;
+  border-radius: 18px;
 }
   &__content {
     display: flex;
