@@ -1,0 +1,42 @@
+# Thiago Paolo Icochea Rodríguez
+
+> Thiago Paolo Icochea Rodríguez es un desarrollador Full Stack orientado a Backend, radicado en Lima, Perú, especializado en Java, Spring Boot, Node.js y Angular.
+
+Estudiante universitario de ingeniería de software y desarrollador autodidacta, Thiago construye APIs robustas y sistemas escalables en el backend, con experiencia sólida en frontend que le permite entregar productos completos de principio a fin. Actualmente busca una oportunidad de prácticas profesionales en Lima, Perú.
+
+## Páginas clave
+
+- [Inicio](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/): Landing con resumen de perfil, stack tecnológico y proyectos destacados.
+- [Sobre mí](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/sobre-mi): Historia personal, educación, experiencia profesional e intereses.
+- [Habilidades](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/habilidades): Listado de tecnologías dominadas, filtrables por categoría (backend, frontend, bases de datos, DevOps, lenguajes).
+- [Proyectos](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/proyectos): Proyectos personales y colaborativos con enlaces a repositorios y demos en vivo.
+- [Contacto](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/contacto): Canales de contacto directo (WhatsApp, email, LinkedIn, GitHub).
+
+## Temas en los que es experto
+
+- Desarrollo Backend: Java, Spring Boot, Node.js, C#, Python
+- Desarrollo Frontend: Angular, React, TypeScript, JavaScript
+- Bases de datos: MySQL, SQL Server, MongoDB
+- DevOps y contenedores: Docker
+- Arquitectura: APIs REST, autenticación JWT, WebSockets, RAG e integración de IA
+
+## Proyectos destacados
+
+- **Thirix** — Red social multimedia en tiempo real construida con React, TypeScript, Node.js, MongoDB y Socket.IO (publicaciones, mensajería privada, notificaciones en tiempo real, transmisiones en vivo).
+- **Sophix IA** — Plataforma de IA que analiza repositorios de GitHub mediante arquitectura RAG, embeddings y búsqueda vectorial (NestJS, React Native, PostgreSQL, Qdrant, n8n).
+- **Nethink** — Marketplace B2B donde lideró como Technical Lead la arquitectura técnica y la integración frontend/backend (Angular, Node.js, MySQL).
+- **Nendoshop** — E-commerce Full Stack colaborativo con React, Node.js y MongoDB Atlas, liderado como Technical Lead.
+
+## Tipo de contenido
+
+- Portafolio profesional / página personal
+- Descripciones de proyectos de software con stack técnico detallado
+- Perfil profesional (educación, experiencia, habilidades)
+
+## Contacto y autoridad
+
+- Ubicación: Lima, Perú
+- Rol: Desarrollador Full Stack orientado a Backend
+- GitHub: https://github.com/ThiagoIcochea
+- LinkedIn: https://www.linkedin.com/in/thiago-paolo-icochea-rodríguez-04b0932b6
+- Sitio: https://thiagoicochea.github.io/portafolio-proyecto-presentacion/

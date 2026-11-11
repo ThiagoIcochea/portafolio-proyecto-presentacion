@@ -3,9 +3,10 @@ import {
   inject,
   OnInit,
   OnDestroy,
-  HostListener
+  HostListener,
+  PLATFORM_ID,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { PortfolioService } from '../../services/portfolio.service';
 import { Technology } from '../../models/portfolio.model';
@@ -20,16 +21,20 @@ import { Technology } from '../../models/portfolio.model';
 export class HomeComponent implements OnInit, OnDestroy {
 
   portfolio = inject(PortfolioService);
+  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   wheelAngle = 0;
   wheelSpeed = 0.4;
 
   private wheelInterval: ReturnType<typeof setInterval> | null = null;
 
- 
+
   wheelRadius = 180;
 
   ngOnInit(): void {
+    if (!this.isBrowser) {
+      return;
+    }
     this.updateWheelRadius();
     this.startWheel();
   }
