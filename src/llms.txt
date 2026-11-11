@@ -7,10 +7,10 @@ Estudiante universitario de ingeniería de software y desarrollador autodidacta,
 ## Páginas clave
 
 - [Inicio](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/): Landing con resumen de perfil, stack tecnológico y proyectos destacados.
-- [Sobre mí](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/sobre-mi): Historia personal, educación, experiencia profesional e intereses.
-- [Habilidades](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/habilidades): Listado de tecnologías dominadas, filtrables por categoría (backend, frontend, bases de datos, DevOps, lenguajes).
-- [Proyectos](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/proyectos): Proyectos personales y colaborativos con enlaces a repositorios y demos en vivo.
-- [Contacto](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/contacto): Canales de contacto directo (WhatsApp, email, LinkedIn, GitHub).
+- [Sobre mí](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/sobre-mi/): Historia personal, educación, experiencia profesional e intereses.
+- [Habilidades](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/habilidades/): Listado de tecnologías dominadas, filtrables por categoría (backend, frontend, bases de datos, DevOps, lenguajes).
+- [Proyectos](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/proyectos/): Proyectos personales y colaborativos con enlaces a repositorios y demos en vivo.
+- [Contacto](https://thiagoicochea.github.io/portafolio-proyecto-presentacion/contacto/): Canales de contacto directo (WhatsApp, email, LinkedIn, GitHub).
 
 ## Temas en los que es experto
 

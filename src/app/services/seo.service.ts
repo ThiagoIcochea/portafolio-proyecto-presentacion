@@ -57,7 +57,9 @@ export class SeoService {
   }
 
   private buildUrl(path: string): string {
-    const normalized = path === '/' ? '/' : `/${path.replace(/^\/+/, '')}`;
+    // GitHub Pages 301-redirects "/foo" to "/foo/" (directory + index.html),
+    // so the canonical must be the trailing-slash form that serves directly.
+    const normalized = path === '/' ? '/' : `/${path.replace(/^\/+|\/+$/g, '')}/`;
     return `${SITE_URL}${normalized}`;
   }
 

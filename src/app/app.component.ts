@@ -113,7 +113,7 @@ export class AppComponent implements OnInit {
         '@type': 'ListItem',
         position: 2,
         name: title.split('|')[0].trim(),
-        item: `${SITE_URL}${path}`,
+        item: `${SITE_URL}${path}/`,
       });
     }
     return {
